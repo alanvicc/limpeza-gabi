@@ -79,12 +79,20 @@
             // Pode adicionar aqui lógica para validar os dados do formulário antes de enviar
             
             // Obtém os dados do formulário
-            var formData = new FormData(this);
+            var formData = {
+                nome: document.getElementById('nome').value,
+                email: document.getElementById('email').value,
+                telefone: document.getElementById('telefone').value
+            };
             
             // Faz a requisição para o servidor
-            fetch(this.action, {
+            fetch('http://localhost:3000/submit-form', {
                 method: 'POST',
-                body: formData
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                body: JSON.stringify(formData)
             })
             .then(response => {
                 if (response.ok) {

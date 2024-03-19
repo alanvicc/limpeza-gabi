@@ -6,7 +6,11 @@ const cors = require('cors');
 const app = express();
 const port = 3000;
 
-app.use(cors()); // Habilita o CORS para todas as rotas
+const corsOptions = {
+    origin: 'http://127.0.0.1:8080',
+};
+
+app.use(cors(corsOptions)); // Habilita o CORS para todas as rotas
 
 // Configuração do pool de conexão com o banco de dados
 const pool = new Pool({

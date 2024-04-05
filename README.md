@@ -8,16 +8,16 @@ Para configurar o ambiente de desenvolvimento, foram utilizados três containers
 
 A estrutura do projeto é composta pelos seguintes arquivos:
 
-background.jpg: Imagem de fundo utilizada no front end.
-contato.html: Página de contato com o formulário de envio de pedido de limpeza.
-docker-compose.yml: Arquivo de configuração do Docker Compose para montagem do ambiente.
-Dockerfile: Arquivo de configuração para a construção da imagem Docker do servidor Node.js.
-index.html: Página inicial de boas-vindas com informações sobre os serviços de limpeza.
-init.sql: Script SQL para inicialização do banco de dados Postgres.
-package.json: Arquivo de manifesto do Node.js com as dependências do projeto.
-README.md: Documentação do projeto em formato Markdown.
-server.js: Código do servidor Node.js que lida com as requisições e integração com o endpoint de cadastro de clientes.
-styles.css: Arquivo de folha de estilo CSS para estilização do front end.
+1. background.jpg: Imagem de fundo utilizada no front end.
+2. contato.html: Página de contato com o formulário de envio de pedido de limpeza.
+3. docker-compose.yml: Arquivo de configuração do Docker Compose para montagem do ambiente.
+4. Dockerfile: Arquivo de configuração para a construção da imagem Docker do servidor Node.js.
+5. index.html: Página inicial de boas-vindas com informações sobre os serviços de limpeza.
+6. init.sql: Script SQL para inicialização do banco de dados Postgres.
+7. package.json: Arquivo de manifesto do Node.js com as dependências do projeto.
+8. README.md: Documentação do projeto em formato Markdown.
+9. server.js: Código do servidor Node.js que lida com as requisições e integração com o endpoint de cadastro de clientes.
+10. styles.css: Arquivo de folha de estilo CSS para estilização do front end.
 
 Instruções para Configurar Ambiente Docker do site Limpeza Gabi.
 ==========================================

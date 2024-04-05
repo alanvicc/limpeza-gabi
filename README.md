@@ -1,3 +1,24 @@
+Sobre o projeto 
+==========================================
+O projeto consiste em um sistema de agendamento de serviços de limpeza, composto por um front end desenvolvido em HTML/CSS. A página inicial oferece informações sobre os serviços disponíveis, enquanto a página de contato contém um formulário para envio de pedidos de limpeza.
+
+O front end está integrado com um servidor Node.js, cujo código em JavaScript realiza requisições POST para um endpoint de cadastro de clientes.
+
+Para configurar o ambiente de desenvolvimento, foram utilizados três containers Docker: um para o servidor web NGINX, outro para o servidor Node.js e um terceiro para o banco de dados Postgres. Todo o ambiente pode ser montado utilizando o arquivo docker-compose.yml.
+
+A estrutura do projeto é composta pelos seguintes arquivos:
+
+background.jpg: Imagem de fundo utilizada no front end.
+contato.html: Página de contato com o formulário de envio de pedido de limpeza.
+docker-compose.yml: Arquivo de configuração do Docker Compose para montagem do ambiente.
+Dockerfile: Arquivo de configuração para a construção da imagem Docker do servidor Node.js.
+index.html: Página inicial de boas-vindas com informações sobre os serviços de limpeza.
+init.sql: Script SQL para inicialização do banco de dados Postgres.
+package.json: Arquivo de manifesto do Node.js com as dependências do projeto.
+README.md: Documentação do projeto em formato Markdown.
+server.js: Código do servidor Node.js que lida com as requisições e integração com o endpoint de cadastro de clientes.
+styles.css: Arquivo de folha de estilo CSS para estilização do front end.
+
 Instruções para Configurar Ambiente Docker do site Limpeza Gabi.
 ==========================================
 
